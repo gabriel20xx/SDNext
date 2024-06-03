@@ -7,4 +7,6 @@ RUN apt update && \
 	
 RUN git clone https://github.com/vladmandic/automatic .
 
+
+EXPOSE 7860
 ENTRYPOINT ["/app/webui.sh", "--debug"]
